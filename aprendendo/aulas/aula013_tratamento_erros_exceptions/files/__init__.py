@@ -1,7 +1,6 @@
 def inserirNoArquivo(text=""):
-    arquivo = open("pessoas.txt", "a")
-    arquivo.write(text + "\n")
-    arquivo.close()
+    with open("pessoas.txt", "a") as arquivo:
+        arquivo.write(text + "\n")
 
 
 def pegarTextoInteiroNoArquivo():
