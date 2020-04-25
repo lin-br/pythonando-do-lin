@@ -1,10 +1,9 @@
 class ValidatorAccountNumbers:
 
-    @classmethod
-    def is_valid(cls, numbers_in_text: str):
-        aux: int = 9
-        summ: int = 0
-        for number in numbers_in_text:
-            summ += int(number) * aux
-            aux -= 1
-        return summ % 11 == 0
+    @staticmethod
+    def is_valid(numbers_in_text: str):
+        total: int = 0
+        for position, number in enumerate(numbers_in_text):
+            place_inverted = (len(numbers_in_text) - position)
+            total += place_inverted * int(number)
+        return total % 11 == 0
