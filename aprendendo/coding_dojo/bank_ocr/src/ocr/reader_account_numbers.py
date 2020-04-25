@@ -1,7 +1,7 @@
 class ReaderAccountNumber:
     __slots__ = ['_list', '_numbers']
 
-    _numbers_masks = {
+    NUMBERS_MASKS = {
         ' _ | ||_|': '0',
         '     |  |': '1',
         ' _  _||_ ': '2',
@@ -13,12 +13,12 @@ class ReaderAccountNumber:
         ' _ |_||_|': '8',
         ' _ |_| _|': '9'
     }
-    _number_of_characters = 27
-    _number_of_spaces = 3
-    _number_of_lines_with_numbers = 3
+    NUMBER_OF_CHARACTERS = 27
+    NUMBER_OF_SPACES = 3
+    NUMBER_OF_LINES_WITH_NUMBERS = 3
 
     def _split_text_and_get_list(self, text):
-        return text.split('\n')[:self._number_of_lines_with_numbers]
+        return text.split('\n')[:self.NUMBER_OF_LINES_WITH_NUMBERS]
 
     def _join_characters_of_number(self, text_splited, initial, end):
         number = ''
@@ -28,8 +28,8 @@ class ReaderAccountNumber:
 
     def _get_list_number_from_three_cells_on_three_lines(self, text_splited):
         list_of_numbers = []
-        for initial in range(0, self._number_of_characters, self._number_of_spaces):
-            end = initial + self._number_of_spaces
+        for initial in range(0, self.NUMBER_OF_CHARACTERS, self.NUMBER_OF_SPACES):
+            end = initial + self.NUMBER_OF_SPACES
             list_of_numbers.append(self._join_characters_of_number(text_splited, initial, end))
         return list_of_numbers
 
@@ -40,5 +40,5 @@ class ReaderAccountNumber:
     def numbers(self):
         result = ''
         for number in self._list:
-            result += self._numbers_masks.get(number)
+            result += self.NUMBERS_MASKS.get(number)
         return result
