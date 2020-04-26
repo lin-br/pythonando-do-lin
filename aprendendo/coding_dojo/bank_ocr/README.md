@@ -26,9 +26,24 @@ nome da posição:  d9 d8 d7 d6 d5 d4 d3 d2 d1
 cálculo: (d1+2*d2+3*d3+4*d4...+9*d9) mod 11 = 0
 ```
 
+## User Story 3
+Agora é necessário gerar um tipo de relatório com base nas informações lidas pela máquina.
+Esse relatório será salvo em um arquivo, onde a primeira coluna é número lido e a segunda coluna
+é um espaço para uma sinalização referente a leitura do número da conta, se o número não
+é valido informa um **ERR** e no caso de um número ilegível é informado um **ILL**. Além
+disso, caso algum digito não consiga ser identificado na leitura do número da conta,
+esse digito é representado por uma interrogação (**?**).
+```text
+457508000
+664371495 ERR
+86110??36 ILL
+```
+
 # Tasks
 1. Sua primeira tarefa é escrever um programa que possa pegar esse arquivo e analisá-lo em números de contas reais.
 2. Sua segunda tarefa é validar o número da conta lido através do cálculo apresentado no User Story 2.
+3. Sua terceira tarefa é informar através do relatório solicitado no User Story 3, se um número de conta é
+inválido ou se possui digitos ilegíveis.
 
 # Suggested Test Cases
 ```text
@@ -93,4 +108,27 @@ use case 2
 
 Input -> This number 457508000 is valid?
 Output -> True
+
+use case 3
+
+ _  _  _  _  _  _  _  _    
+| || || || || || || ||_   |
+|_||_||_||_||_||_||_| _|  |
+
+=> 000000051
+    _  _  _  _  _  _     _ 
+|_||_|| || ||_   |  |  | _ 
+  | _||_||_||_|  |  |  | _|
+
+=> 49006771? ILL
+ _  _     _  _        _  _ 
+|_ |_ |_| _|  |  ||_||_||_ 
+|_||_|  | _|  |  |  | _| _|
+
+=> 664371495 ERR
+    _  _     _  _  _  _  _ 
+  | _| _||_| _ |_   ||_||_|
+  ||_  _|  | _||_|  ||_| _ 
+
+=> 1234?678? ILL
 ```
