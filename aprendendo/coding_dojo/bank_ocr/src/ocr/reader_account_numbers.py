@@ -40,5 +40,5 @@ class ReaderAccountNumber:
     def numbers(self):
         result = ''
         for number in self._list:
-            result += self.NUMBERS_MASKS.get(number)
+            result += self.NUMBERS_MASKS.get(number, '?')
         return result
