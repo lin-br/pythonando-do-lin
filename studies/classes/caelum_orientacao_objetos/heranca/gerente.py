@@ -1,5 +1,5 @@
-from aprendendo.aulas.caelum_orientacao_objetos.heranca.autenticavel import Autenticavel
-from aprendendo.aulas.caelum_orientacao_objetos.heranca.funcionario import Funcionario
+from studies.classes.caelum_orientacao_objetos.heranca.autenticavel import Autenticavel
+from studies.classes.caelum_orientacao_objetos.heranca.funcionario import Funcionario
 
 
 class Gerente(Funcionario, Autenticavel):

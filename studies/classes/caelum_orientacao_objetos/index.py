@@ -1,9 +1,9 @@
-from aprendendo.aulas.caelum_orientacao_objetos.cliente import Cliente
-from aprendendo.aulas.caelum_orientacao_objetos.conta import Conta
-from aprendendo.aulas.caelum_orientacao_objetos.heranca.autenticavel import Autenticavel
-from aprendendo.aulas.caelum_orientacao_objetos.heranca.diretor import Diretor
-from aprendendo.aulas.caelum_orientacao_objetos.heranca.gerente import Gerente
-from aprendendo.aulas.caelum_orientacao_objetos.pessoa import Pessoa
+from studies.classes.caelum_orientacao_objetos.cliente import Cliente
+from studies.classes.caelum_orientacao_objetos.conta import Conta
+from studies.classes.caelum_orientacao_objetos.heranca.autenticavel import Autenticavel
+from studies.classes.caelum_orientacao_objetos.heranca.diretor import Diretor
+from studies.classes.caelum_orientacao_objetos.heranca.gerente import Gerente
+from studies.classes.caelum_orientacao_objetos.pessoa import Pessoa
 
 if __name__ == '__main__':
     firstCliente = Cliente('Cabrau', 'De la', '00000000022')

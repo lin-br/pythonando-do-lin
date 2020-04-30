@@ -5,9 +5,9 @@ seu nome e idade em um arquivo de texto simples. O sistema só vai ter 2 opçõe
     listar todas as pessoas cadastradas
 """
 
-from aprendendo.aulas.aula013_tratamento_erros_exceptions.files import inserirNoArquivo, pegarTextoInteiroNoArquivo
-from aprendendo.aulas.aula013_tratamento_erros_exceptions.menu import exibirMenu, recuperarEscolha
-from aprendendo.aulas.aula013_tratamento_erros_exceptions.pessoas import cadastrar, listar
+from studies.classes.aula013_tratamento_erros_exceptions.files import inserirNoArquivo, pegarTextoInteiroNoArquivo
+from studies.classes.aula013_tratamento_erros_exceptions.menu import exibirMenu, recuperarEscolha
+from studies.classes.aula013_tratamento_erros_exceptions.pessoas import cadastrar, listar
 
 try:
     while True:

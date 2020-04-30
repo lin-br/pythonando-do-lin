@@ -1,4 +1,4 @@
-from aprendendo.aulas.caelum_orientacao_objetos.historico import Historico
+from studies.classes.caelum_orientacao_objetos.historico import Historico
 
 
 class Conta:
