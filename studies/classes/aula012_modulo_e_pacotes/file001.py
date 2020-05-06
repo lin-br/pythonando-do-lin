@@ -1,4 +1,4 @@
-from studies.utils import numbers
+from studies.classes.aula012_modulo_e_pacotes.utils import numbers
 
 num = int(input('Digite um valor: '))
 print(f'O fatorial de {num} é {numbers.fatorial(num)}')
