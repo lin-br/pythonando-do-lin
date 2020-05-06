@@ -1,6 +1,6 @@
 import unittest
 
-from ocr.validator_account_numbers import ValidatorAccountNumbers
+from studies.coding_dojo.bank_ocr.src.ocr.validator_account_numbers import ValidatorAccountNumbers
 
 
 class TestValidAccountNumbers(unittest.TestCase):

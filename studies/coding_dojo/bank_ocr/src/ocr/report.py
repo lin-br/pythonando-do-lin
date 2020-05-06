@@ -1,5 +1,5 @@
-from ocr.reader_account_numbers import ReaderAccountNumber
-from ocr.validator_account_numbers import ValidatorAccountNumbers
+from studies.coding_dojo.bank_ocr.src.ocr.reader_account_numbers import ReaderAccountNumber
+from studies.coding_dojo.bank_ocr.src.ocr.validator_account_numbers import ValidatorAccountNumbers
 
 
 class Report:

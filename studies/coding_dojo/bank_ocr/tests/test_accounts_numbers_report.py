@@ -1,6 +1,6 @@
 import unittest
 
-from ocr.report import Report
+from studies.coding_dojo.bank_ocr.src.ocr.report import Report
 
 
 class TestAccountsNumbersReport(unittest.TestCase):

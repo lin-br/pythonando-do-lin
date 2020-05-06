@@ -1,6 +1,6 @@
 import unittest
 
-from ocr.reader_account_numbers import ReaderAccountNumber
+from studies.coding_dojo.bank_ocr.src.ocr.reader_account_numbers import ReaderAccountNumber
 
 
 class TestReadAccountNumbers(unittest.TestCase):
