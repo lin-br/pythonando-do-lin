@@ -1,7 +1,26 @@
 # Problem Description
 
-Escreva um programa que gere todos os anagramas de duas palavras da string "documenting".
-A lista de palavras que pode utilizar consta no arquivo `wordlist.txt`.
+## Completed tasks
+- [ ] 1st task
+- [ ] 2nd task
+- [ ] 3rd task
+- [ ] 4th task
+
+## Your tasks
+### 1st task
+Escreva um programa que gere todos os anagramas de duas palavras da string "documenting" com
+a lista de palavras que consta no arquivo `wordlist.txt`.
+
+### 2nd task
+Escreva um progama que calcule a quantidade possível de anagramas de uma determina palavra,
+sentença ou frase.
+
+### 3rd task
+Agora desenvolva um algoritmo que encontre um determinado anagrama dentro de uma frase
+ou sentença.
+
+### 4th task
+Implemente concurrencia a busca e comparação da primeira tarefa.
 
 ## Anagrama
 Para começar, vamos primeiro identificar o que o Kata está pedindo.
