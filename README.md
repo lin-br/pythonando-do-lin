@@ -12,6 +12,9 @@ você pode validar o [resultado](https://github.com/lin-br/pythonando-do-lin/tre
 ### Anagram :construction_worker_man::building_construction::construction:
 Desafio em desenvolvimento, encontrado através da página do [Coding Dojo - Kata Anagram](http://codingdojo.org/kata/Anagram/).
 
+### Criar frases com palavras aleatórias em inglês :memo:
+Desafio criado em uma aula de inglês.
+
 ### Bowling :memo:
 Desafio no backlog do projeto, encontrado através da página do [Coding Dojo - Kata Bowling](http://codingdojo.org/kata/Bowling/).
 
