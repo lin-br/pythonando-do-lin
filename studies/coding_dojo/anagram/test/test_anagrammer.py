@@ -3,7 +3,7 @@ import unittest
 from studies.coding_dojo.anagram.src.anagram.anagrammer import Anagrammer
 
 
-class AnagrammerTestCase(unittest.TestCase):
+class TestAnagrammer(unittest.TestCase):
 
     def test_should_indicate_true_if_finding_a_anagram_on_a_list(self):
         anagrammer = Anagrammer('documenting')
