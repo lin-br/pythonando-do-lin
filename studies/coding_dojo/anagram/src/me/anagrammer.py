@@ -1,8 +1,10 @@
 class Anagrammer:
-    __slots__ = ['_word']
+    __slots__ = ['_word', '_word_sorted']
 
     def __init__(self, word: str):
         self._word = word
+        self._word_sorted = sorted(word)
 
     def this_is_an_anagram(self, list_of_word: list):
-        return True
+        list_of_word_sorted = [sorted(word) for word in list_of_word]
+        return self._word_sorted in list_of_word_sorted
