@@ -9,7 +9,7 @@ class TestFileAnagrammer(unittest.TestCase):
 
     def test_should_indicate_false_if_not_finding_a_anagram_in_a_file(self):
         file_anagrammer = FileAnagrammer('resources/wordlist.txt')
-        self.assertTrue(file_anagrammer.check_with_word('not_finding'))
+        self.assertFalse(file_anagrammer.check_with_word('not_finding'))
 
     def test_should_get_a_result_with_all_anagram_words(self):
         file_anagrammer = FileAnagrammer('resources/wordlist.txt')
