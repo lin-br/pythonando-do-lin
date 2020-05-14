@@ -1,7 +1,7 @@
 # Problem Description
 
 ## Completed tasks
-- [ ] 1st task
+- [X] 1st task
 - [ ] 2nd task
 - [ ] 3rd task
 - [ ] 4th task
