@@ -26,3 +26,9 @@ class FileAnagrammer:
         allowed_words = [word for word in self._full_list if self.__contains_allowed_letters(word, word_for_check)]
         words_together = [first + second for first in allowed_words for second in allowed_words]
         return anagrammer.is_has_anagram(words_together)
+
+    def get_result_of_anagram(self, word_for_check: str):
+        anagrammer = Anagrammer(word_for_check)
+        allowed_words = [word for word in self._full_list if self.__contains_allowed_letters(word, word_for_check)]
+        matrix = [[first, second] for first in allowed_words for second in allowed_words]
+        return anagrammer.get_the_result_of_anagrams(matrix)
