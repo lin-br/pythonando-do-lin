@@ -36,6 +36,18 @@ class TestAnagrammer(unittest.TestCase):
         result = anagrammer.get_the_result_of_anagrams([])
         self.assertEqual('topa', result.word)
 
+    def test_should_obtain_the_quantity_of_anagrams_for_the_word_containing_three_equal_letters(self):
+        anagrammer = Anagrammer('abacaxi')
+        self.assertEqual(840, anagrammer.get_number_of_anagrams())
+
+    def test_should_obtain_the_quantity_of_anagrams_for_the_word_not_containing_equal_letters(self):
+        anagrammer = Anagrammer('topa')
+        self.assertEqual(24, anagrammer.get_number_of_anagrams())
+
+    def test_should_obtain_the_quantity_of_anagrams_for_the_sentence(self):
+        anagrammer = Anagrammer('eu vou e já volto')
+        self.assertEqual(129729600, anagrammer.get_number_of_anagrams())
+
 
 if __name__ == '__main__':
     unittest.main()
