@@ -1,9 +1,9 @@
-import unittest
+from unittest import TestCase, main
 
 from anagrammer import Anagrammer
 
 
-class TestAnagrammer(unittest.TestCase):
+class TestAnagrammer(TestCase):
 
     def test_should_indicate_true_if_finding_a_anagram_on_a_list(self):
         anagrammer = Anagrammer('documenting')
@@ -50,4 +50,4 @@ class TestAnagrammer(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    main()

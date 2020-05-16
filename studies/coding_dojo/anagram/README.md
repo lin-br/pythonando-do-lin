@@ -2,7 +2,7 @@
 
 ## Completed tasks
 - [X] 1st task
-- [ ] 2nd task
+- [X] 2nd task
 - [ ] 3rd task
 - [ ] 4th task
 
