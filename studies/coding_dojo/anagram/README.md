@@ -12,7 +12,7 @@ Escreva um programa que gere todos os anagramas de duas palavras da string "docu
 a lista de palavras que consta no arquivo `wordlist.txt`.
 
 ### 2nd task
-Escreva um progama que calcule a quantidade possível de anagramas de uma determina palavra,
+Escreva um progama que calcule a quantidade possível de anagramas de uma determinada palavra,
 sentença ou frase.
 
 ### 3rd task
