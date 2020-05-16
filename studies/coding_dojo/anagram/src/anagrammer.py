@@ -1,3 +1,4 @@
+from functools import reduce
 from math import factorial
 
 
@@ -21,25 +22,17 @@ class Anagrammer:
         return Result(self._word, anagrams)
 
     def get_number_of_anagrams(self):
-        letters_more_of_one_time = {}
-        for letter in self._word_sorted:
-            if self._word.count(letter) > 1:
-                letters_more_of_one_time[letter] = self._word.count(letter)
-
-        da = 0
+        letters_more_of_one_time = {
+            letter: self._word.count(letter) for letter in self._word_sorted if self._word.count(letter) > 1
+        }
+        factorial_total = factorial(len(self._word_sorted))
 
         if len(letters_more_of_one_time) > 0:
-            for number in letters_more_of_one_time.values():
-                if da == 0:
-                    da += factorial(number)
-                else:
-                    da *= factorial(number)
-
-        factoriando = factorial(len(self._word_sorted))
-        if da == 0:
-            return factoriando
+            factorial_from_letters_repeated = reduce(lambda x, y: x * y,
+                                                     map(lambda x: factorial(x), letters_more_of_one_time.values()))
+            return factorial_total / factorial_from_letters_repeated
         else:
-            return factoriando / da
+            return factorial_total
 
 
 class Result:
