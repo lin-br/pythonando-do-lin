@@ -1,6 +1,6 @@
 import unittest
 
-from me.anagrammer import Anagrammer
+from anagrammer import Anagrammer
 
 
 class TestAnagrammer(unittest.TestCase):

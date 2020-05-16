@@ -1,7 +1,7 @@
 from os.path import normpath, join, dirname, pardir
 from unittest import TestCase, main
 
-from me.file import FileAnagrammer
+from file import FileAnagrammer
 
 
 class TestFileAnagrammer(TestCase):
