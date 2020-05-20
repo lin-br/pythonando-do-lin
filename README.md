@@ -10,7 +10,9 @@ Desafio encontrado através da página do [Coding Dojo - Kata Bank OCR](http://c
 você pode validar o [resultado](https://github.com/lin-br/pythonando-do-lin/tree/master/studies/coding_dojo/bank_ocr).
 
 ### Anagram :construction_worker_man::building_construction::construction:
-Desafio em desenvolvimento, encontrado através da página do [Coding Dojo - Kata Anagram](http://codingdojo.org/kata/Anagram/).
+Este desafio foi baseado no [Coding Dojo - Kata Anagram](http://codingdojo.org/kata/Anagram/), mas desta vez foram
+adicionadas algumas tarefas extras ao desafio proposto. Com essas tarefas extras eu desenvolvi os testes unitários
+e após isso eu comecei o desenvolvimento do projeto.
 
 ### Bowling :memo:
 Desafio no backlog do projeto, encontrado através da página do [Coding Dojo - Kata Bowling](http://codingdojo.org/kata/Bowling/).
