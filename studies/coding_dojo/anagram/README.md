@@ -4,7 +4,6 @@
 - [X] 1st task
 - [X] 2nd task
 - [ ] 3rd task
-- [ ] 4th task
 
 ## Your tasks
 ### 1st task
@@ -16,10 +15,6 @@ Escreva um progama que calcule a quantidade possível de anagramas de uma determ
 sentença ou frase.
 
 ### 3rd task
-Agora desenvolva um algoritmo que encontre um determinado anagrama dentro de uma frase
-ou sentença.
-
-### 4th task
 Implemente concurrencia a busca e comparação da primeira tarefa.
 
 ## Anagrama
