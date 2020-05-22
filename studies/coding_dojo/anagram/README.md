@@ -3,7 +3,6 @@
 ## Completed tasks
 - [X] 1st task
 - [X] 2nd task
-- [ ] 3rd task
 
 ## Your tasks
 ### 1st task
@@ -13,9 +12,6 @@ a lista de palavras que consta no arquivo `wordlist.txt`.
 ### 2nd task
 Escreva um progama que calcule a quantidade possível de anagramas de uma determinada palavra,
 sentença ou frase.
-
-### 3rd task
-Implemente concurrencia a busca e comparação da primeira tarefa.
 
 ## Anagrama
 Para começar, vamos primeiro identificar o que o Kata está pedindo.
