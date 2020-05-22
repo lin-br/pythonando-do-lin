@@ -14,8 +14,13 @@ Este desafio foi baseado no [Coding Dojo - Kata Anagram](http://codingdojo.org/k
 adicionadas algumas tarefas extras ao desafio proposto. Com essas tarefas extras eu desenvolvi os testes unitários
 e após isso eu comecei o desenvolvimento do projeto.
 
-### Criar frases com palavras aleatórias em inglês :memo:
-Desafio criado em uma aula de inglês.
+### Sentences English :construction_worker_man::building_construction::construction:
+Durante uma aula de inglês eu recebi vários insights que iriam ser aplicados em desafios naquela aula.
+E naquele momento eu me perguntei "caramba, como eu vou lembrar disso amanhã ou na semana que vem?", os insights
+eram sobre formação de frases e sentenças.
+Então eu tive uma ideia: se eu levantar todo dia e executar um programa que vai me dar algumas palavras chaves
+em inglês e eu tenho que montar algumas frases com aquelas palavras, eu vou ter contato com esses
+insights todos os dias. Dessa maneira eu não vou esquece-los.
 
 ### Bowling :memo:
 Desafio no backlog do projeto, encontrado através da página do [Coding Dojo - Kata Bowling](http://codingdojo.org/kata/Bowling/).
