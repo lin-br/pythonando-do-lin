@@ -14,6 +14,10 @@ Este desafio foi baseado no [Coding Dojo - Kata Anagram](http://codingdojo.org/k
 adicionadas algumas tarefas extras ao desafio proposto. Com essas tarefas extras eu desenvolvi os testes unitários
 e após isso eu comecei o desenvolvimento do projeto. Aqui você pode avaliar o [resultado](https://github.com/lin-br/pythonando-do-lin/tree/master/studies/coding_dojo/anagram). 
 
+### Project Euler: Multiples of 3 and 5 (Problem 1) :white_check_mark:
+Desafio encontrado através da página [Project Euler - Problem 1](https://projecteuler.net/problem=1), aqui você pode
+validar o [resultado](https://github.com/lin-br/pythonando-do-lin/blob/master/studies/project_euler/problem_1/answer.py).
+
 ### Bowling :construction_worker_man::building_construction::construction:
 Desafio no backlog do projeto, encontrado através da página do [Coding Dojo - Kata Bowling](http://codingdojo.org/kata/Bowling/).
 
