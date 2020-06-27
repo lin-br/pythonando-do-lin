@@ -18,6 +18,9 @@ e após isso eu comecei o desenvolvimento do projeto. Aqui você pode avaliar o 
 Desafio encontrado através da página [Project Euler - Problem 1](https://projecteuler.net/problem=1), aqui você pode
 validar o [resultado](https://github.com/lin-br/pythonando-do-lin/blob/master/studies/project_euler/problem_1/answer.py).
 
+### Trading Card Game :construction_worker_man::building_construction::construction:
+Desafio encontrado através da página [Condig Dojo - Trading Card Game](https://codingdojo.org/kata/TradingCardGame/).
+
 ### Bowling :construction_worker_man::building_construction::construction:
 Desafio no backlog do projeto, encontrado através da página do [Coding Dojo - Kata Bowling](http://codingdojo.org/kata/Bowling/).
 
