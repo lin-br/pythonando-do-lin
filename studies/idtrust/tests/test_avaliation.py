@@ -1,22 +1,39 @@
-def should_avaliation_not_greater_than_100():
-    pass
+import pytest
+
+from evaluation import Evaluation
 
 
-def should_avaliation_not_less_than_0():
-    pass
+def test_should_evaluation_not_greater_than_100():
+    evaluation = Evaluation()
+    with pytest.raises(ValueError):
+        evaluation.add_grade(101)
 
 
-def should_avaliation_less_than_40_must_fail():
-    pass
+def test_should_evaluation_not_less_than_0():
+    evaluation = Evaluation()
+    with pytest.raises(ValueError):
+        evaluation.add_grade(-42)
 
 
-def should_84_avaliation_have_to_be_85():
-    pass
+def test_should_evaluation_less_than_40_must_fail():
+    evaluation = Evaluation()
+    evaluation.add_grade(30)
+    assert evaluation.result is False
 
 
-def should_81_avaliation_not_have_to_be_85():
-    pass
+def test_should_84_evaluation_have_to_be_85():
+    evaluation = Evaluation()
+    evaluation.add_grade(84)
+    assert evaluation.grade == 85
 
 
-def should_38_avaliation_not_have_to_be_40_and_must_fail():
-    pass
+def test_should_81_evaluation_not_have_to_be_85():
+    evaluation = Evaluation()
+    evaluation.add_grade(81)
+    assert evaluation.grade == 81
+
+
+def test_should_38_evaluation_not_have_to_be_40_and_must_fail():
+    evaluation = Evaluation()
+    evaluation.add_grade(38)
+    assert evaluation.grade == 38 and evaluation.result is False
