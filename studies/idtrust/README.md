@@ -11,13 +11,13 @@ Por exemplo, uma nota igual a 84 seria arredondada para 85 mas uma nota igual a 
 porque o resultado seria uma nota menor que 40.
 Dado o valor inicial da nota para cada n alunos, escreva um algoritmo que automatize o arredondamento das
 notas de acordo com as regras acima e imprima o valor do resultado em uma nova linha.
-### Formato de entrada
+### Input format
 A primeira linha representa **n**, o número de alunos. Cada linha **i** das **n** linhas seguintes contém um inteiro que
 representa a nota de um aluno (**ni**).
-### Limitações
+### Limitations
 * 1 ≤ n ≤ 60
 * 0 ≤ nota ≤ 100
-### Saída
+### Output format
 Para cada nota das **n** notas, imprima a nota arredondada em uma nova linha.
 ### Input example:
 ```text
@@ -46,17 +46,17 @@ onde cada entrada é de um dos três tipos a seguir:
 * **1 x**: Enfilera o elemento x no fim da fila.
 * **2**: Desenfileira o elemento do início da fila.
 * **3**: Imprime o elemento do início da fila.
-### Formato da entrada
+### Input format
 A primeira linha é um inteiro, **q**, que representa o número de operações. Cada linha **i** das q operações
 subsequentes representa uma única operação no formato descrito na lista acima. Todas os três tipos de
 operação começam com um inteiro representando o tipo da operação mas somente a primeira operação é seguida
 de um espaço e um valor **x** que representa o valor a ser enfileirado.
-### Limitações
+### Limitations
 * 1 ≤ q ≤ 100000
 * 1 ≤ tipo ≤ 3
 * 1 ≤ |x| ≤ 1000000000
 * É garantido que sempre existe um valor válido para cada operação do tipo 3.
-### Formato de saída
+### Output format
 Para cada operação do **tipo 3**, imprimir o valor do elemento no início da fila em uma nova linha.
 ### Input example:
 ```text
