@@ -1,6 +1,6 @@
 .PHONY: tests clean
 
-PATH_ENVIRONMENT=environment
+PATH_ENVIRONMENT=venv
 ACTIVATE_ENVIRONMENT=./$(PATH_ENVIRONMENT)/bin/activate
 
 install: clean
