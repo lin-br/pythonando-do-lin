@@ -41,6 +41,7 @@ Essa estrutura de dados é chamada de **FIFO (first-in-first-out)** pois o prime
 à fila é sempre o primeiro a ser removido. Uma fila básica tem as seguintes possíveis operações:
 * Enfileirar: Adiciona um elemento no final da fila.
 * Desenfileirar: Remove o elemento do início da fila e retorna o mesmo.
+
 Nesse exercício você deve implementar uma fila utilizando **duas pilhas**. Em seguida, processar **q** operações,
 onde cada entrada é de um dos três tipos a seguir:
 * **1 x**: Enfilera o elemento x no fim da fila.
