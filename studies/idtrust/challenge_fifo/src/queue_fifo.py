@@ -16,14 +16,20 @@ class Queue:
         elif self.__last is not None:
             self.__last.after = new
         self.__last = new
-        self.__length += 1
+        self.__increment_size()
 
     def dequeue(self) -> int:
         first = self.__begin
         self.__begin = first.after
-        self.__length -= 1
+        self.__decrement_size()
         return first.value
 
     @property
     def length(self) -> int:
         return self.__length
+
+    def __increment_size(self):
+        self.__length += 1
+
+    def __decrement_size(self):
+        self.__length -= 1
