@@ -18,6 +18,10 @@ def test_should_dequeue_the_first_element_from_queue():
     assert queue.dequeue() == 30
 
 
+def test_should_dequeue_and_decrease_the_size_of_queue():
+    pass
+
+
 def test_should_print_the_first_element_from_queue():
     pass
 
