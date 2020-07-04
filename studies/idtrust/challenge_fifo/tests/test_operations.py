@@ -56,5 +56,5 @@ def test_should_the_value_to_queue_less_than_or_equal_to_1000000000(operations):
         operations.execute('1 1000000001')
 
 
-def test_should_always_exist_a_valid_value_for_operation_type_number_3():
-    pass
+def test_should_always_exist_a_valid_value_for_operation_type_number_3(operations):
+    assert operations.execute('3') == 0
