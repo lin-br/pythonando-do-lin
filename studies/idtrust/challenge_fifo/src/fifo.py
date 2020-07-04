@@ -1,13 +1,14 @@
+from abstract_queue import Queue
 from node import Node
 
 
-class Queue:
-    __slots__ = ['__begin', '__last', '__length']
+class Fifo(Queue[int]):
+    __slots__ = ['__begin', '__last']
 
     def __init__(self):
+        super().__init__()
         self.__begin = None
         self.__last = None
-        self.__length = 0
 
     def enqueue(self, number: int):
         new = Node(number)
@@ -16,23 +17,13 @@ class Queue:
         elif self.__last is not None:
             self.__last.after = new
         self.__last = new
-        self.__increment_size()
+        super()._increment_size()
 
     def dequeue(self) -> int:
         first = self.__begin
         self.__begin = first.after
-        self.__decrement_size()
+        super()._decrement_size()
         return first.value
 
     def print(self) -> int:
         return self.__begin.value
-
-    @property
-    def length(self) -> int:
-        return self.__length
-
-    def __increment_size(self):
-        self.__length += 1
-
-    def __decrement_size(self):
-        self.__length -= 1

@@ -1,11 +1,11 @@
 from pytest import fixture
 
-from queue_fifo import Queue
+from fifo import Fifo
 
 
 @fixture
 def queue():
-    return Queue()
+    return Fifo()
 
 
 def test_should_to_queue_element_x_to_begin_queue(queue):

@@ -1,4 +1,4 @@
-from queue_fifo import Queue
+from abstract_queue import Queue
 
 
 class Operations:

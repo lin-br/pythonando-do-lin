@@ -1,12 +1,12 @@
 from pytest import fixture, raises
 
+from fifo import Fifo
 from operations import Operations
-from queue_fifo import Queue
 
 
 @fixture
 def queue():
-    return Queue()
+    return Fifo()
 
 
 @fixture
