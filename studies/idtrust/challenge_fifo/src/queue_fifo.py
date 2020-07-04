@@ -21,6 +21,7 @@ class Queue:
     def dequeue(self) -> int:
         first = self.__begin
         self.__begin = first.after
+        self.__length -= 1
         return first.value
 
     @property

@@ -23,8 +23,13 @@ def test_should_dequeue_the_first_element_from_queue(queue):
     assert queue.dequeue() == 30
 
 
-def test_should_dequeue_and_decrease_the_size_of_queue():
-    pass
+def test_should_dequeue_and_decrease_the_size_of_queue(queue):
+    for number in range(0, 4):
+        queue.to_queue(number)
+
+    for number in range(3, -1, -1):
+        queue.dequeue()
+        assert queue.length == number
 
 
 def test_should_print_the_first_element_from_queue():
