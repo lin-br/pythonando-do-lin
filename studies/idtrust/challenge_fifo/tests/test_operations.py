@@ -44,12 +44,16 @@ def test_should_type_number_less_than_or_equal_to_3(operations):
         operations.execute('4')
 
 
-def test_should_the_value_to_queue_greater_than_or_equal_to_1():
-    pass
+def test_should_the_value_to_queue_greater_than_or_equal_to_1(operations):
+    operations.execute('1 1')
+    with raises(ValueError):
+        operations.execute('1 -1')
 
 
-def test_should_the_value_to_queue_less_than_or_equal_to_1000000000():
-    pass
+def test_should_the_value_to_queue_less_than_or_equal_to_1000000000(operations):
+    operations.execute('1 1000000000')
+    with raises(ValueError):
+        operations.execute('1 1000000001')
 
 
 def test_should_always_exist_a_valid_value_for_operation_type_number_3():
