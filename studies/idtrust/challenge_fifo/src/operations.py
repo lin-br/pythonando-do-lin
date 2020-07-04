@@ -14,3 +14,5 @@ class Operations:
             self.__queue.dequeue()
         elif operation.startswith('3'):
             return self.__queue.print()
+        else:
+            raise ValueError(f'Not found the operation to [{operation}]')

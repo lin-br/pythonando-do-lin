@@ -1,4 +1,4 @@
-from pytest import fixture
+from pytest import fixture, raises
 
 from operations import Operations
 from queue_fifo import Queue
@@ -34,12 +34,14 @@ def test_should_operation_3_print_the_first_element_from_queue(operations):
     assert operations.execute('3') == 2451
 
 
-def test_should_type_number_greater_than_or_equal_to_1():
-    pass
+def test_should_type_number_greater_than_or_equal_to_1(operations):
+    with raises(ValueError):
+        operations.execute('-1')
 
 
-def test_should_type_number_less_than_or_equal_to_3():
-    pass
+def test_should_type_number_less_than_or_equal_to_3(operations):
+    with raises(ValueError):
+        operations.execute('4')
 
 
 def test_should_the_value_to_queue_greater_than_or_equal_to_1():
