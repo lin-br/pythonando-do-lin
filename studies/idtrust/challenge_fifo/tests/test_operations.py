@@ -27,8 +27,11 @@ def test_should_operation_2_dequeue_the_first_element_from_queue(operations, que
     assert queue.length == 2
 
 
-def test_should_operation_3_print_the_first_element_from_queue():
-    pass
+def test_should_operation_3_print_the_first_element_from_queue(operations):
+    operations.execute('1 2451')
+    operations.execute('1 100')
+    operations.execute('1 09')
+    assert operations.execute('3') == 2451
 
 
 def test_should_type_number_greater_than_or_equal_to_1():
