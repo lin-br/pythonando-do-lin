@@ -1,4 +1,4 @@
-from queue import Queue
+from queue_fifo import Queue
 
 
 def test_should_to_queue_element_x_to_begin_queue():
@@ -9,7 +9,13 @@ def test_should_to_queue_element_x_to_begin_queue():
 
 
 def test_should_dequeue_the_first_element_from_queue():
-    pass
+    queue = Queue()
+    queue.to_queue(10)
+    queue.to_queue(20)
+    queue.to_queue(30)
+    assert queue.dequeue() == 10
+    assert queue.dequeue() == 20
+    assert queue.dequeue() == 30
 
 
 def test_should_print_the_first_element_from_queue():
