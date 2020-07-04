@@ -33,4 +33,10 @@ def test_should_dequeue_and_decrease_the_size_of_queue(queue):
 
 
 def test_should_print_the_first_element_from_queue(queue):
-    pass
+    queue.enqueue(10)
+    queue.enqueue(20)
+    queue.enqueue(30)
+    assert queue.print() == 10
+    queue.dequeue()
+    queue.dequeue()
+    assert queue.print() == 30

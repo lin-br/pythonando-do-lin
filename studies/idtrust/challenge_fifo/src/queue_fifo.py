@@ -24,6 +24,9 @@ class Queue:
         self.__decrement_size()
         return first.value
 
+    def print(self):
+        return self.__begin.value
+
     @property
     def length(self) -> int:
         return self.__length
