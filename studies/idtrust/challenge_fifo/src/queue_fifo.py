@@ -9,7 +9,7 @@ class Queue:
         self.__last = None
         self.__length = 0
 
-    def to_queue(self, number: int):
+    def enqueue(self, number: int):
         new = Node(number)
         if self.__begin is None:
             self.__begin = new
