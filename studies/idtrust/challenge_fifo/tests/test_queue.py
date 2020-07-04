@@ -1,5 +1,11 @@
+from queue import Queue
+
+
 def test_should_to_queue_element_x_to_begin_queue():
-    pass
+    queue = Queue()
+    queue.to_queue(10)
+    assert queue.length == 1
+    assert queue.dequeue() == 10
 
 
 def test_should_dequeue_the_first_element_from_queue():
