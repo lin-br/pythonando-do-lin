@@ -27,8 +27,8 @@ class Book:
         if self.__number_of_operations == 0:
             self.__can_add_operation = False
 
-    def execute(self) -> str:
-        return str(self.__operations.execute(self.__queue.dequeue()))
+    def execute(self) -> int:
+        return self.__operations.execute(self.__queue.dequeue())
 
     @staticmethod
     def __valid_operations_number(operations_number) -> int:

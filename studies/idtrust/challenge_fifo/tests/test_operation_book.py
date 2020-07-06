@@ -24,7 +24,7 @@ def test_should_the_ouput_equal_14():
     book.execute()
     book.execute()
     book.execute()
-    assert book.execute() == '14'
+    assert book.execute() == 14
 
 
 def test_should_burst_exceptions_if_try_execute_with_number_of_operations_less_than_to_0():
