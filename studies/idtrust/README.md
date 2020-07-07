@@ -34,7 +34,7 @@ Para cada nota das **n** notas, imprima a nota arredondada em uma nova linha.
 40
 33
 ```
-## Challenge FIFO :construction_worker_man::building_construction::construction:
+## Challenge FIFO :white_check_mark: [Resultado](https://github.com/lin-br/pythonando-do-lin/tree/master/studies/idtrust/challenge_fifo)
 Uma fila é um tipo abstrato de dados que mantém a ordem que os elementos são inseridos, permitindo que os
 elementos mais antigos sejam removidos do início e novos elementos sejam adicionados no fim.
 Essa estrutura de dados é chamada de **FIFO (first-in-first-out)** pois o primeiro elemento adicionado
