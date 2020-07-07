@@ -1,50 +1,56 @@
-from abc import ABC, abstractmethod
+from abstract_queue import Queue
+from node import Node
 
 
-class Fifo(ABC):
-
-    @abstractmethod
-    def to_queue(self, x: int):
-        pass
-
-    @abstractmethod
-    def dequeue(self) -> int:
-        pass
-
-
-class Node:
-    __slots__ = ['__value', '__next']
-
-    def __init__(self, value: int):
-        self.__value = value
-        self.__next = None
-
-    def connect(self, connect_next):
-        self.__next = connect_next
-
-    def disconnect(self):
-        del self.__next
-
-    @property
-    def value(self):
-        return self.__value
-
-
-class Ops(Fifo):
-    __slots__ = ['__begin', '__end', '__length']
+class Fifo(Queue[int]):
+    __slots__ = ['__begin', '__last']
 
     def __init__(self):
+        super().__init__()
         self.__begin = None
-        self.__end = None
-        self.__length = 0
+        self.__last = None
 
-    def to_queue(self, op: int):
+    def enqueue(self, number: int):
+        new = Node(number)
         if self.__begin is None:
-            self.__begin = Node(op)
-        if self.__end is None:
-            self.__end = Node(op)
-        self.__end.connect(Node(op))
-        self.__length += 1
+            self.__begin = new
+        elif self.__last is not None:
+            self.__last.after = new
+        self.__last = new
+        super()._increment_size()
 
     def dequeue(self) -> int:
-        result = self.__begin
+        first = self.__begin
+        self.__begin = first.after
+        super()._decrement_size()
+        return first.value
+
+    def print(self) -> int:
+        return self.__begin.value
+
+
+class FifoString(Queue[str]):
+    __slots__ = ['__begin', '__last']
+
+    def __init__(self):
+        super().__init__()
+        self.__begin = None
+        self.__last = None
+
+    def enqueue(self, text: str):
+        new = Node(text)
+        if self.__begin is None:
+            self.__begin = new
+        elif self.__last is not None:
+            self.__last.after = new
+        self.__last = new
+        super()._increment_size()
+
+    def dequeue(self) -> str:
+        first = self.__begin
+        self.__begin = first.after
+        super()._decrement_size()
+        return first.value
+
+    def print(self) -> str:
+        return self.__begin.value
