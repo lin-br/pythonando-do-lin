@@ -13,3 +13,8 @@ print('FIM')
 for x in range(0, 10, 2):  # executa 5 vezes pulando de 2 em 2
     print(x)
 print('FIM')
+
+for x in range(1, 6):  # executa 5 vezes
+    print('Oi')
+else:  # comando opcional, executa apenas se o for executar normalmente sem a utilização do break.
+    print('FIM')

@@ -3,6 +3,7 @@ Variáveis compostas
     Tuplas inicia com ()
     Lista inicia com []
     Dicionário inicia com {}
+    Conjuntos inicia com {}
 
 Dicionário são mutáveis
 """
@@ -37,3 +38,7 @@ for key, value in filmes.items():
 locadora = list()
 locadora.append(filmes)
 print(locadora)
+
+# atualiza o dicionário atual com outro
+dados.update(filmes)
+print(dados)

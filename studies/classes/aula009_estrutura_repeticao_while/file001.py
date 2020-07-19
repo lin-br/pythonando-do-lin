@@ -14,3 +14,10 @@ while True:
     if number == 0:
         break
 print('FIM')
+
+c = 1
+while c < 10:
+    print(c)
+    c += 1
+else:  # comando opcional, executa apenas se o for executar normalmente sem a utilização do break.
+    print('FIM')

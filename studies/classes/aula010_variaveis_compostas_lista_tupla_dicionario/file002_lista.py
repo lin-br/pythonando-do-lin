@@ -3,6 +3,7 @@ Variáveis compostas
     Tuplas inicia com ()
     Lista inicia com []
     Dicionário inicia com {}
+    Conjuntos inicia com {}
 
 Listas são mutáveis
 """
