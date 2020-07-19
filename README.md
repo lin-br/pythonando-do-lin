@@ -18,7 +18,16 @@ e após isso eu comecei o desenvolvimento do projeto. Aqui você pode avaliar o 
 Desafio encontrado através da página [Project Euler - Problem 1](https://projecteuler.net/problem=1), aqui você pode
 validar o [resultado](https://github.com/lin-br/pythonando-do-lin/blob/master/studies/project_euler/problem_1/answer.py).
 
-### Bowling :construction_worker_man::building_construction::construction:
+### Challenge iDtrust University :white_check_mark:
+Descrição do desafio encontrado [aqui](https://github.com/lin-br/pythonando-do-lin/tree/master/studies/idtrust#university-white_check_mark-resultado).
+
+### Challenge iDtrust FIFO :white_check_mark:
+Descrição do desafio encontrado [aqui](https://github.com/lin-br/pythonando-do-lin/tree/master/studies/idtrust#challenge-fifo-white_check_mark-resultado).
+
+### Trading Card Game :interrobang:STOPPED:interrobang:
+Desafio encontrado através da página [Condig Dojo - Trading Card Game](https://codingdojo.org/kata/TradingCardGame/).
+
+### Bowling :memo:
 Desafio no backlog do projeto, encontrado através da página do [Coding Dojo - Kata Bowling](http://codingdojo.org/kata/Bowling/).
 
 ### Christmas Delivery :memo:
